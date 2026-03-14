@@ -1,0 +1,341 @@
+.header {
+  --green: #1aa287;
+  --green-dark: #128a73;
+  --text: #1f2a2b;
+  --muted: #6f7b7b;
+  --white: #ffffff;
+
+  width: 100%;
+  color: var(--text);
+}
+
+.header__container {
+  width: 100%;
+  max-width: 83.3333vw;
+  margin: 0 auto;
+  padding: 0 2.0833vw;
+}
+
+.header__top {
+  background: var(--white);
+}
+
+.header__topInner {
+  display: flex;
+  align-items: center;
+  gap: 1.25vw;
+  height: 4.375vw;
+}
+
+.header__burger {
+  display: none;
+  width: 2.2917vw;
+  height: 2.2917vw;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 0.1563vw;
+  background: var(--green);
+  border-radius: 5.1563vw;
+  margin: 0.3646vw 0;
+}
+
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.header__logoImg {
+  display: block;
+  width: 6.25vw;
+  height: auto;
+}
+
+.header__geo {
+  display: flex;
+  gap: 0.5208vw;
+  margin-left: 0.9375vw;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.header__geoIcon {
+  width: 0.9375vw;
+  height: 0.9375vw;
+}
+
+.header__geoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  min-width: 0;
+}
+
+.header__geoCity {
+  font-size: 0.8333vw;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header__geoAddr {
+  font-size: 0.7292vw;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 0.625vw;
+  flex: 0 0 auto;
+}
+
+.header__wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__waIcon {
+  width: 1.875vw;
+  height: 1.875vw;
+}
+
+.header__phone {
+  font-size: 0.8333vw;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.header__cta {
+  margin-left: 0.9375vw;
+  padding: 0.7292vw 1.3542vw;
+  border-radius: 51.9792vw;
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.7292vw;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background 160ms ease;
+  border: none;
+}
+
+.header__cta:hover {
+  background: var(--green-dark);
+}
+
+.header__nav {
+  background: var(--green);
+}
+
+.header__navInner {
+  height: 2.8125vw;
+  display: flex;
+  align-items: center;
+  gap: 1.875vw;
+}
+
+.header__navLink {
+  color: var(--white);
+  font-size: 0.8333vw;
+  font-weight: 600;
+  opacity: 0.95;
+  transition: opacity 160ms ease;
+}
+
+.header__navLink:hover {
+  opacity: 1;
+}
+
+.header__overlay {
+  display: none;
+}
+
+.header__overlayRight {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    max-width: none;
+    padding: 0 4.2667vw;
+  }
+
+  .header__topInner {
+    height: 17.0667vw;
+    gap: 3.2vw;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .header__burger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10.6667vw;
+    height: 10.6667vw;
+  }
+
+  .header__burger span {
+    height: 0.8vw;
+    margin: 1.0667vw 0;
+    border-radius: 26.4vw;
+  }
+
+  .header__logoImg {
+    width: 21.8667vw;
+  }
+
+  .header__geo {
+    display: none;
+  }
+
+  .header__contacts {
+    display: none;
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 36%;
+    transform: translateX(-50%);
+  }
+
+  .header__overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 162, 135, 0.78);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+    z-index: 1000;
+  }
+
+  .header__overlayOpen {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header__overlayTop {
+    height: 17.0667vw;
+    padding: 0 4.2667vw;
+    display: flex;
+    align-items: center;
+    gap: 3.2vw;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(2.6667vw);
+  }
+
+  .header__close {
+    width: 10.6667vw;
+    height: 10.6667vw;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .header__close::before,
+  .header__close::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10.6667vw;
+    height: 0.8vw;
+    background: var(--green);
+    border-radius: 26.4vw;
+    transform-origin: center;
+  }
+
+  .header__close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .header__close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .header__overlayLogo {
+    position: absolute;
+    left: 36%;
+    transform: translateX(-50%);
+    display: inline-flex;
+  }
+
+  .header__overlayRight {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.05;
+    gap: 1.0667vw;
+  }
+
+  .header__overlayPhone {
+    font-size: 3.7333vw;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .header__overlayCity {
+    font-size: 3.2vw;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .header__overlayBody {
+    padding: 7.4667vw 5.8667vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5.8667vw;
+  }
+
+  .header__overlayLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 4.2667vw;
+  }
+
+  .header__overlayLink {
+    font-size: 4.8vw;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.98);
+  }
+
+  .header__overlayCta {
+    margin-top: 3.7333vw;
+    width: fit-content;
+    padding: 3.7333vw 5.8667vw;
+    border-radius: 26.64vw;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--green-dark);
+    font-size: 3.7333vw;
+    font-weight: 800;
+    box-shadow: 0 2.6667vw 5.8667vw rgba(0, 0, 0, 0.08);
+    border: none;
+  }
+}

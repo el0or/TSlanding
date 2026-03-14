@@ -1,0 +1,161 @@
+.faq {
+  width: 100%;
+  padding: 4.6875vw 0 5.2083vw;
+}
+
+.title {
+  margin: 0 0 2.6042vw;
+  text-align: center;
+  font-size: 2.5vw;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #354445;
+}
+
+.list {
+  width: 100%;
+  max-width: 62.5vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0417vw;
+}
+
+.item {
+  background: #F8FBFA;
+}
+
+.summary {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5625vw;
+  padding: 1.875vw 1.8229vw 1.875vw 1.8229vw;
+  cursor: pointer;
+  list-style: none;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary span:first-child {
+  max-width: 49vw;
+  font-size: 1.6667vw;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #354445;
+}
+
+.icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 1.5625vw;
+  height: 1.5625vw;
+  margin-top: 0.1563vw;
+}
+
+.icon::before,
+.icon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #20c7a6;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease;
+}
+
+.icon::before {
+  width: 1.5625vw;
+  height: 0.1042vw;
+}
+
+.icon::after {
+  width: 0.1042vw;
+  height: 1.5625vw;
+}
+
+.item[open] .icon::after {
+  opacity: 0;
+}
+
+.content {
+  padding: 0 1.8229vw 1.875vw;
+}
+
+.content p {
+  margin: 0 0 1.25vw;
+  max-width: 50.5208vw;
+  font-size: 1.1458vw;
+  line-height: 1.45;
+  color: #667270;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+.content p + p {
+  margin-top: 1.3021vw;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 10.6667vw 4.2667vw;
+  }
+
+  .title {
+    margin-bottom: 6.4vw;
+    font-size: 5.8667vw;
+    line-height: 1.2;
+  }
+
+  .list {
+    max-width: none;
+    gap: 3.2vw;
+  }
+
+  .summary {
+    gap: 4.2667vw;
+    padding: 5.3333vw 5.3333vw;
+  }
+
+  .summary span:first-child {
+    max-width: 66vw;
+    font-size: 4.8vw;
+    line-height: 1.35;
+  }
+
+  .icon {
+    width: 5.3333vw;
+    height: 5.3333vw;
+    margin-top: 0.5333vw;
+  }
+
+  .icon::before {
+    width: 5.3333vw;
+    height: 0.5333vw;
+  }
+
+  .icon::after {
+    width: 0.5333vw;
+    height: 5.3333vw;
+  }
+
+  .content {
+    padding: 0 5.3333vw 5.3333vw;
+  }
+
+  .content p {
+    max-width: none;
+    margin-bottom: 4.2667vw;
+    font-size: 3.7333vw;
+    line-height: 1.5;
+  }
+
+  .content p + p {
+    margin-top: 4.2667vw;
+  }
+}

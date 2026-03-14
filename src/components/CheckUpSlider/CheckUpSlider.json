@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "title": "CHECK-UP",
+    "subtitle": "для мужчин",
+    "list": [
+      "Гормональный скрининг",
+      "Тестостерон",
+      "Свободный тестостерон",
+      "Глобулин, связывающий половые гормоны"
+    ],
+    "price": "2800₽",
+    "oldPrice": "3500₽",
+    "image": "/doctor.png",
+    "imageAlt": "Врач за работой",
+    "primaryButton": {
+      "label": "Записаться",
+      "href": "#appointment"
+    },
+    "secondaryButton": {
+      "label": "Подробнее",
+      "href": "#details"
+    }
+  },
+  {
+    "id": 2,
+    "title": "CHECK-UP",
+    "subtitle": "для женщин",
+    "list": [
+      "Общий анализ крови",
+      "Железо сыворотки",
+      "Ферритин",
+      "Витамин D"
+    ],
+    "price": "3200₽",
+    "oldPrice": "3900₽",
+    "image": "/doctor.png",
+    "imageAlt": "Врач за работой",
+    "primaryButton": {
+      "label": "Записаться",
+      "href": "#appointment"
+    },
+    "secondaryButton": {
+      "label": "Подробнее",
+      "href": "#details"
+    }
+  },
+  {
+    "id": 3,
+    "title": "CHECK-UP",
+    "subtitle": "для детей",
+    "list": [
+      "Общий анализ крови",
+      "Общий анализ мочи",
+      "Консультация педиатра",
+      "Базовый скрининг"
+    ],
+    "price": "2500₽",
+    "oldPrice": "3100₽",
+    "image": "/doctor.png",
+    "imageAlt": "Врач за работой",
+    "primaryButton": {
+      "label": "Записаться",
+      "href": "#appointment"
+    },
+    "secondaryButton": {
+      "label": "Подробнее",
+      "href": "#details"
+    }
+  },
+  {
+    "id": 4,
+    "title": "CHECK-UP",
+    "subtitle": "ежегодный",
+    "list": [
+      "Биохимический анализ крови",
+      "Липидный профиль",
+      "Глюкоза",
+      "Консультация терапевта"
+    ],
+    "price": "4100₽",
+    "oldPrice": "4900₽",
+    "image": "/doctor.png",
+    "imageAlt": "Врач за работой",
+    "primaryButton": {
+      "label": "Записаться",
+      "href": "#appointment"
+    },
+    "secondaryButton": {
+      "label": "Подробнее",
+      "href": "#details"
+    }
+  }
+]
